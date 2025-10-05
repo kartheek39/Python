@@ -1,0 +1,8 @@
+2025-08-30 18:00:01 INFO Starting application.
+2025-08-30 18:00:02 INFO Connecting to database.
+2025-08-30 18:00:03 ERROR Database connection failed: timeout error.
+2025-08-30 18:00:05 WARNING Retrying database connection.
+2025-08-30 18:00:06 INFO Database reconnected successfully.
+2025-08-30 18:00:08 INFO Processing user request.
+2025-08-30 18:00:09 ERROR Failed to process user request: invalid input error.
+2025-08-30 18:00:10 INFO Application shutting down.

@@ -1,0 +1,12 @@
+
+def print_error_lines(filepath):
+    with open(filepath, "r") as file:
+        lines = file.readlines()
+
+    for line in lines:
+        if "error" in line:
+            print(line)
+
+error_file = "error.log"
+
+print_error_lines(error_file)

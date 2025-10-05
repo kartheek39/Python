@@ -1,0 +1,25 @@
+
+from azure.identity import DefaultAzureCredential
+from azure.storage.blob import BlobServiceClient
+
+
+
+# TODO: Replace <storage-account-name> with your actual storage account name
+account_url = "https://sakartheek01.blob.core.windows.net"
+credential = DefaultAzureCredential()
+
+# Create the BlobServiceClient object
+blob_service_client = BlobServiceClient(account_url, credential=credential)
+
+
+container_name = "test-blob-02"
+
+container_client = blob_service_client.create_container(container_name)
+
+
+for container in blob_service_client.list_containers():
+    print("Container:", container['name'])
+
+
+
+

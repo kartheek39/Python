@@ -1,6 +1,6 @@
 configfile = "server.conf"
 key_to_update = "MAX_CONNECTIONS"
-value_to_update = "500"
+value_to_update = "1000"
 
 def update_server(filepath, key, value):
 
